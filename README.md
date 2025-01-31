@@ -16,8 +16,9 @@ This is my personal portfolio website, built using **HTML, CSS, and JavaScript**
 - Skillset overview
 - Contact section with social links
 - Smooth scrolling and animations
+
   
-- ![Screenshot 2025-01-31 110901](https://github.com/user-attachments/assets/81b01143-7122-48dc-a840-ff3a9e7f2cd7)
+![Screenshot 2025-01-31 110901](https://github.com/user-attachments/assets/81b01143-7122-48dc-a840-ff3a9e7f2cd7)
 
 
 ## 🚀 How to Run
