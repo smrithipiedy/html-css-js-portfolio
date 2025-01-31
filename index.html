@@ -1,426 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Smrithi Piedy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Smrithi Piedy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="icon" href="assets/headerpic_sp.png" type="image/x-icon">
+    <title>Smrithi's Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">~Smrithi</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skillset">Skillset</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="no-scroll-padding">Contact</a>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="home" id="home" background="./assets/lines_bg.png">
+        <div class="home-img">
+            <img src="main.jpg" alt="">
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="home-content animate__animated animate__fadeInUp">
+            <h1>Hello, I'm <span>Smrithi.</span></h1>
+            <h3 class="typing-text" style="font-size: 3rem;">I'm a <span class="auto-type"></span></h3>
+            <p style="font-size: 2rem;">Visionary, Creator, Trailblazer. <br>Developing the future, one line of code at a time :) </p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin" onclick="location.href='https://linkedin.com/in/smrithipiedy'"></i></a>
+                <a href="#"><i class="fa-brands fa-github" onclick="location.href='https://github.com/smrithipiedy'"></i></a>
+                <a href="#"><i class="fa-brands fa-google" onclick="location.href='https://g.dev/smrithipiedy'"></i></a>
+                <a href="#"><i class="fa-brands fa-discord" onclick="location.href='http://discordapp.com/users/smrithipiedy'"></i></a>
+            </div>
+            <a href="#contact" class="btn" onclick="location.href='./#contact'" style="width: fit-content;">Contact me</a>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Smrithi</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/smrithipiedy'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/smrithipiedy'"
-          />
-        </div>
-      </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            <script> var typed = new Typed(".auto-type", {
+                strings: ['Web Developer', 'UI/UX Designer', 'Cloud Engineer', 'Programmer'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            })</script>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
+      <h1 class="title">About Me</h1><br />
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
+        <div class="top-row">
+          <div class="section__pic-container">
+            <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+          </div>
           <div class="about-containers">
             <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <i class="fa-solid fa-award fa-xl" alt="Experience icon"></i>
+              <h3 style="color: #fff53b; font-size: 25px;">Experience</h3><br />
+              <p style="font-size: 16px;">Dec '24 - Jan '25<br />Web Development Intern<br />@ ShadowFox</p><br />
+              <p>Dec '24 - Mar '25<br />Open Source Contributor<br />@ Social Winter of Code - Season 5</p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.E Computer Science and Engineering<br />from MNM Jain Engineering College, Chennai.</p>
+              <i class="fa-solid fa-graduation-cap fa-xl" alt="Education icon"></i>
+              <h3 style="color: #fff53b; font-size: 25px;">Education</h3><br />
+              <p style="font-size: 16px;">B.E Computer Science and Engineering<br />2023 - 2027<br /> @ MNM Jain Engineering College<br />(Affiliated to Anna University)<br />Chennai, IN.</p>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
           </div>
         </div>
+        <div class="text-container">
+          <p>
+            I'm Smrithi Piedy, an undergraduate student working towards a Bachelor's degree in Computer Science and Engineering with a passion for developing and designing. My curiosity and love for technology have driven me to explore how innovation and design can solve real-world problems.
+          </p><br />
+          <p>
+            Growing up, I spent most of my time surfing the internet and learning cool new things everyday. I was fascinated with how computers and the internet worked from a younger age, as it always felt like magic to me. Observing the creation of remarkable digital experiences on screen was truly inspiring, and hence, my determination to learn and build my own software someday was born.
+          </p><br />
+          <p>
+            I love experimenting with different programming languages, exploring uncharted areas of tech, and trying out new methods to implement them into my work. I find trial and error to be the most effective method of approach to any problem. While it might be time-consuming, this approach helps me develop unique and interesting ideas. I believe that the best way to learn is by having hands-on experience, and that's what I do.
+          </p><br />
+          <p>
+            I've completed various courses that have contributed to my growth in web development, UI/UX, cloud computing and programming. I have knowledge in fields such as full stack development, software programming and designing.<br />Overall, I'm a creative and compassionate person at heart, and a logical and strategic person in mind.
+          </p>
+        </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ReactJS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tailwind CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>UI/UX</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
+      <section id="skillset">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skillset</h1><br />
+        <div class="skillset-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="skillset-sub-title">Frontend Development</h2>
+              <div class="article-container">
                 <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>ReactJS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skillset-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>MySQL</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>NodeJS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Github</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skillset-sub-title">Programming Languages</h2>
+              <div class="article-container">
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
                     <h3>Python</h3>
                     <p>Experienced</p>
-                    </div>
+                  </div>
                 </article>
                 <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
-                    <h3>SQL</h3>
-                    <p>Experienced</p>
-                    </div>
-                </article>
-                <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
                     <h3>C</h3>
                     <p>Experienced</p>
-                    </div>
+                  </div>
                 </article>
                 <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
                     <h3>C++</h3>
-                    <p>Experienced</p>
-                    </div>
+                    <p>Intermediate</p>
+                  </div>
                 </article>
                 <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
                     <h3>Java</h3>
                     <p>Intermediate</p>
-                    </div>
+                  </div>
                 </article>
-            <article>
-                <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-                />
-                <div>
-                <h3>Node JS</h3>
-                <p>Intermediate</p>
-                </div>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skillset-sub-title">UI/UX</h2>
+              <div class="article-container">
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Figma</h3>
+                    <p>Intermediate</p>
+                  </div>
                 </article>
                 <article>
-                    <img
-                    src="./assets/checkmark.png"
-                    alt="Experience icon"
-                    class="icon"
-                    />
-                    <div>
-                    <h3>Express JS</h3>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Adobe XD</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>InVision</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="skillset-sub-title">Designing/Editing</h2>
+              <div class="article-container">
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Adobe After Effects</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Adobe Premiere Pro</h3>
                     <p>Intermediate</p>
-                    </div>
-              </article>
-              <article>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Adobe Photoshop</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <i class="fa-solid fa-star-of-life"></i>
+                  <div>
+                    <h3>Canva</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1><br />
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
                 <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
                 />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              </div><br />
+              <h2>Project One</h2>
+              <p style="margin-bottom: 20px;">Coming soon!</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                  style="width: fit-content;"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                  style="width: fit-content;"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div><br />
+              <h2>Project Two</h2>
+              <p style="margin-bottom: 20px;">Coming soon!</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/smrithipiedy'"
+                  style="width: fit-content;"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/smrithipiedy'"
+                  style="width: fit-content;"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div><br />
+              <h2>Project Three</h2>
+              <p style="margin-bottom: 20px;">Coming soon!</p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                  style="width: fit-content;"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                  style="width: fit-content;"
+                >
+                  Live Demo
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Live Demo
-              </button>
-            </div>
+      </section>
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p style="color: #fff53b;"><a href="smrithipiedy21@outlook.com">smrithipiedy21@outlook.com</a></p>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/smrithipiedy'"
-              >
-                Live Demo
-              </button>
-            </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/smrithipiedy">LinkedIn</a></p>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="smrithipiedy21@outlook.com">smrithipiedy21@outlook.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/smrithipiedy">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Smrithi Piedy. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      </section>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links" style="color: #161616;">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skillset">Skillset</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact" class="no-scroll-padding">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p style="font-size: 13px;">Copyright &#169; 2025 Smrithi Piedy. All Rights Reserved.</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
 </html>
