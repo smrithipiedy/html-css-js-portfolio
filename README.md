@@ -29,6 +29,6 @@ This is my personal portfolio website, built using **HTML, CSS, and JavaScript**
 2. Open `index.html` in a browser.
 
 ## 🔗 Live Demo
-You can view the live version of the portfolio here: [https://smrithipiedy.vercel.app/](#) 
+You can view the live version of the portfolio here: https://smrithipiedy.vercel.app/ 
 
 
