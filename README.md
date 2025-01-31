@@ -20,7 +20,7 @@ This is my personal portfolio website, built using **HTML, CSS, and JavaScript**
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/smrithipiedy/portfolio.git
+   git clone https://github.com/smrithipiedy/portfolio-smrithi.git
    ```
 2. Open `index.html` in a browser.
 
