@@ -31,4 +31,7 @@ This is my personal portfolio website, built using **HTML, CSS, and JavaScript**
 ## 🔗 Live Demo
 You can view the live version of the portfolio here: https://smrithipiedy.vercel.app/ 
 
+## Credits
+This is a portfolio website that I created after watching multiple tutorials from YouTube, including channels like Brian Design and 
+How To Become A Developer, as this is my first experience of building a website.
 
